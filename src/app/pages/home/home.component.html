@@ -1,0 +1,12 @@
+<div class="flex flex-row gap-10">
+  <button class="flex justify-center items-center bg-black p-4 text-white" (click)="hideContainer()">
+    Hide Components
+  </button>
+  <button class="flex justify-center items-center bg-black p-4 text-white" (click)="addComponent()">
+    Add Component
+  </button>
+</div>
+
+<div *ngIf="isVisible">
+  <app-container></app-container>
+</div>
